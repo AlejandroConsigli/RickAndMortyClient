@@ -1,0 +1,16 @@
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  margin-right: auto;
+  margin-left: auto;
+}
