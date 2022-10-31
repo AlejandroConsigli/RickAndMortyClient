@@ -30,7 +30,7 @@ const Pagination = ({
           </span>
         )}
         <span
-          className={`${styles.page} ${page === 1 && styles.actual}`}
+          className={`${styles.page} ${page === 1 ? styles.actual : ""}`}
           onClick={() => handlePagination(1)}
         >
           1
@@ -78,7 +78,9 @@ const Pagination = ({
         )}
         {maxPage !== 1 && (
           <span
-            className={`${styles.page} ${page === maxPage && styles.actual}`}
+            className={`${styles.page} ${
+              page === maxPage ? styles.actual : ""
+            }`}
             onClick={() => handlePagination(maxPage)}
           >
             {maxPage}
